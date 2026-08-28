@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=1024">
+        <meta name="title" content="ShadowGDPS Demonlist">
+        <meta property="og:title" content="ShadowGDPS Demonlist">
+        <meta property="og:description" content="This is a website to rank hardest ShadowGDPS demon verified!">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#000000">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>ShadowGDPS Demon List</title>
+
+        <link rel="icon" href="/list_icon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/css/pages/leaderboard.css"
+        />
+        <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/changelog.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/css/components/tabs.css"
+        />
+        <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+        <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
+        <script type="module" src="/js/main.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+        />     
+    </head>
+    <body id="app">
+        <header :class="{ dark: store.dark, 'darker': store.darker }">
+			<div class="logo" style="display: flex; align-items: center; gap: 12px; border: 0;">
+				<a href="/">
+                <img src="../list_icon.png" alt="The ShadowGDPS Logo" style="height: 50px; border-radius: 10%;" href="/">
+                </a>
+    			<h2 style="margin: 0; white-space: nowrap; font-weight: 550;">ShadowGDPS Demonlist</h2>
+			</div>
+            <nav class="nav">
+                <router-link class="nav__tab" to="/">
+                    <span class="type-label-lg" style="white-space: nowrap;">Demon List</span>
+                </router-link>
+                <router-link class="nav__tab" to="/leaderboard">
+                    <span class="type-label-lg">Leaderboard</span>
+                </router-link>
+                <router-link class="nav__tab" to="/roulette">
+                    <span class="type-label-lg">Roulette</span>
+                </router-link>                
+				<!-- <router-link class="nav__tab" to="/packs">
+                    <span class="type-label-lg">Packs</span>
+                </router-link> -->    
+                <div class="nav__actions">
+                    <button
+                        class="nav__icon"
+                        @click.prevent="store.toggleDark()"
+                    >
+                        <img
+                            :src="store.darkSet ? '/assets/light.svg' : '/assets/dark.svg'"
+                            alt=""
+							style="filter: var(--the-button-on-top)"
+                        />
+                    </button>
+                    <!-- Replace the '#' with your discord server's invite-->
+                    <a class="nav__icon" href="https://discord.gg/FkKeS9kvT4" target="_blank">
+                        <img src="/assets/discord.svg" alt="Discord Logo" style="filter: var(--the-button-on-top)" />
+                    </a>
+                    <!-- List record submission form, add a link to replace the '#' when putting a link to your list submission form-->
+                    <a
+                        class="nav__cta type-label-lg"
+                        href="https://discord.com/channels/1511530779895922768/1528760852193476688"
+                        target="_blank"
+						style="white-space: nowrap;"
+                        >Submit Record</a
+                    >
+                </div>
+            </nav>
+        </header>
+        <router-view :class="{ dark: store.dark, 'darker': store.darker, 'custom': store.custom }"></router-view>
+    </body>
+</html>
