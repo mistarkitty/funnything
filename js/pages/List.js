@@ -187,7 +187,7 @@ export default {
                         Level requirement:
                     </h3>
                     <p>
-                        - A level must be rated on ShadowGDPS.
+                        - A level must be rated on BIGKITTY GDPS.
                     </p>
                     <p>
                         - thats it :p
