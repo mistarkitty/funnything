@@ -1,8 +1,8 @@
 {
     "id": "2",
     "name": "bloodoument",
-    "author": "fhfbfb Author",
-    "creators": ["Example Creator", "two of em"],
+    "author": "mistarkitty",
+    "creators": ["mistarkitty"],
     "verifier": "us",
     "showcase": "https://www.youtube.com/watch?v=rjaL9AEpwQg",
     "percentToQualify": 100,
@@ -10,10 +10,10 @@
     "description": "ewhjrfkjerhgfe",
     "records": [
         {
-            "user": "example record",
+            "user": "100%",
             "percent": 100,
             "link": "link here",
-            "hz": 3
+            "hz": 60
         }
     ]
 }
