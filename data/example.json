@@ -1,0 +1,19 @@
+{
+    "id": "2",
+    "name": "Example Name",
+    "author": "Example Author",
+    "creators": ["Example Creator", "two of em"],
+    "verifier": "us",
+    "showcase": "https://www.youtube.com/watch?v=rjaL9AEpwQg",
+    "percentToQualify": 100,
+    "demonDifficulty": "Hard Demon",
+    "description": "ewhjrfkjerhgfe",
+    "records": [
+        {
+            "user": "example record",
+            "percent": 100,
+            "link": "link here",
+            "hz": 3
+        }
+    ]
+}
