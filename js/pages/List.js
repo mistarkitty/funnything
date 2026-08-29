@@ -126,7 +126,7 @@ export default {
                     </table>
                 </div>
                     <div v-else-if="selected == null" class="level" style="height: 100%; display: flex; justify-content: center; align-items: center; text-align: center;">
-                    <h2>Welcome to the ShadowGDPS Demonlist!</h2>
+                    <h2>Welcome to the BIGKITTY GDPS Demonlist!!</h2>
                     <p>Click the levels on the left side to see information about them!</p>
                     <p>For more information about the submission rules check the right side!</p>
                     <button class="btn" @click="selected = Math.ceil(Math.random() * list.length)">
