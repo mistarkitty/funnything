@@ -140,7 +140,7 @@ export default {
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
                     <div class="og">
-                        <p class="type-label-md">shoutout ballgoballing for helping with the demonlist</p>
+                        <p class="type-label-md">Credits to ballgoballing for the demonlist and everyone. for the icon</p>
 						</div>
                     <template v-if="editors">
                         <h2>List Moderators</h2>
